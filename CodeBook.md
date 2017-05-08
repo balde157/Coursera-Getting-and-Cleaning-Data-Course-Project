@@ -1,14 +1,14 @@
-#Code Book
+	Code Book
 
 This code book will describe the data used in this project, as well as the processing required to create the resulting tidy data set.
 
 
-##Overview
+	Overview
 
 30 volunteers performed 6 different activities while wearing a smartphone. The smartphone captured various data about their movements.
 
 
-##Explanation of each file
+	Explanation of each file
 
 features.txt: Names of the 561 features.
 
@@ -28,12 +28,12 @@ y_test.txt: A vector of 2947 integers, denoting the ID of the activity related t
 
 
 
-##Data files that were not used
+	Data files that were not used
 
 This analysis was performed using only the files above, and did not use the raw signal data. Therefore, the data files in the "Inertial Signals" folders were ignored.
 
 
-##Processing steps
+	Processing steps
 
 All of the relevant data files were read into data frames, appropriate column headers were added, and the training and test sets were combined into a single data set.
 All feature columns were removed that did not contain the exact string "mean()" or "std()". This left 66 feature columns, plus the subjectID and activity columns.
